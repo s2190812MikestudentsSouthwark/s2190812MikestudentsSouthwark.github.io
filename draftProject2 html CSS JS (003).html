@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Document</title>
   <link href="draftProject2 CSS.css" rel="stylesheet">
   </head>
 <body onload="displayfirstquestion()">
@@ -25,13 +29,19 @@
 </div>
 </div>
 
-<button onclick="displaynextquestion()"> next</button>
-<button onclick="displaypreviousquestion()">  prev </button> 
-<button onclick="checkanswer()">  check answer </button>             
+<button class="btn-warning"   onclick="displaynextquestion()"> next</button>
+<button class="btn-warning"    onclick="displaypreviousquestion()">  prev </button> 
+<button class="btn-warning"    onclick="checkanswer()">  check answer </button> 
+<button class="btn-warning"    onclick="startagain()"> start again  </button>           
 <script src="draftProject2 script.js"></script>
 </script>
 
 <script>
+  function startagain()
+  {
+    window.location.href="index.html";
+
+  }
 function displaynextquestion()
 {
 if(counter<questions.length-1)
