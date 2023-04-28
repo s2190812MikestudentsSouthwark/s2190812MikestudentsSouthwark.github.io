@@ -66,15 +66,25 @@ displayquestion();
 
 function checkanswer()
 {
+  if(questions [counter].Type==1)
+  {
+    alert("Right answer is C");
+  }
+  
+   if(questions [counter].Type==2)
+    {
+    alert("Right answer is False");
+    }
+  }
 //if(questions[counter].Type==1)
  // {
-console.log("inside  checkanswer()")
+/*console.log("inside  checkanswer()")
 console.log("current question="+counter)
  console.log("questions[counter].Type"+questions[counter].Type)
  console.log("questions[counter].Question"+questions[counter].Question)
  console.log("questions[counter].correct="+questions[counter].correct)
    //alert("questions[counter].correct.length="+questions[counter].correct.length)
- // }
+ // }*/
 }
 
 
@@ -102,7 +112,7 @@ console.log("number of questions="+questions.length)
  let display=document.querySelector("#content");
 if(questions[counter].Type==1)
 {
-  let replacement= '<div class="item"></div> <div class="item"> a</div> <div class="item"> ' + questions[counter].Question + ' </div>' +
+  let replacement= '<div class="item"></div> <div class="item"> </div> <div class="item"> ' + questions[counter].Question + ' </div>' +
  '<div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].a + ' </div>'+
   '<div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].b + ' </div>'+   
   '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].c + '</div>'+
