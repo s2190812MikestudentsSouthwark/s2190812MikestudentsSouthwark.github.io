@@ -42,16 +42,16 @@ score=0
 function change_score()
 {
 
-
+alert("corect answer  " + questions[counter].correct.toString());
+alert("user answer is "+ userAnswer.toString());
 const userAnswer=document.getElementsByClassname("A")
-if(userAnswer.toString()==questions[counter]correct.toString())
+if(userAnswer.toString()==questions[counter].correct.toString())
+{
 
-
-
+ 
 score=scrore+1;
 alert("Score is now"+ score);
-
-
+  
 
 }
 
@@ -59,6 +59,8 @@ alert("Score is now"+ score);
 
 
 
+
+}
 
 
 
@@ -108,8 +110,9 @@ displayquestion();
 }
 
 function checkanswer()
-{ alert(questions[counter].correct);
-  if(questions [counter].Type==1)
+{ //alert(questions[counter].correct);
+  change_score();
+    if(questions [counter].Type==1)
   {
 
 
