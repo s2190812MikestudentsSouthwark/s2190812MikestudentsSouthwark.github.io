@@ -37,6 +37,17 @@
 </script>
 
 <script>
+
+function lastpage()
+
+{ 
+
+  let replacement="<h1> Quiz completed </h1>"; 
+  let display= document.querySelector("#content");
+  display.innerHTML=replacement;
+}
+
+
   function startagain()
   {
     window.location.href="index.html";
@@ -44,6 +55,11 @@
   }
 function displaynextquestion()
 {
+  counter++;
+  if(counter==questions.length)
+  { 
+    lastpage();
+  }
 if(counter<questions.length-1)
 	counter++;
 //counter=0;
