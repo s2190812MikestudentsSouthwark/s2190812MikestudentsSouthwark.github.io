@@ -1,33 +1,4 @@
 
-#center {
-    margin: auto;
-    width: 50%;
-  /* border: 3px solid green;*/
-    padding: 10px;
-  /* background-color:  #890404;*/
-    }
-  
- /* you can try to change values of the width property for the #content in the css file to make the questions look better
-  
-  */
-  
-  #content {
-      border: 3px solid green;
-  width:30%;
-     /* margin: auto;
-      width: 100%;
-      border: 3px solid green;
-      padding: 50px;
-      background-color:  #890404;*/
-    }
-  
-      /*Try changing different values of vh to change the font size in the BODY selector shown below to get the best size
-  
-      */
-  
- 
-
-
 
 
 body { 
@@ -66,11 +37,11 @@ font-family:  Arial;
 
   #content {
     border: 3px solid green;
-   /* margin: auto;
+    margin: auto;
     width: 100%;
     border: 3px solid green;
     padding: 50px;
-    background-color:  #890404;*/
+    background-color:  #890404;
   }
 
   input 
